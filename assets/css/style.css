@@ -9,9 +9,8 @@ body {
 .logo {
   text-align: center;
   padding: 5vh; }
-
-.puntero {
-  cursor: pointer; }
+  .logo i {
+    cursor: pointer; }
 
 .menu {
   list-style: none; }
@@ -23,15 +22,16 @@ body {
     padding: 3vh; }
 
 hr {
-  border-top: 5px solid #4285f4; }
+  border-top: 5px solid #4285f4;
+  margin: 0 3%; }
 
 h2 {
   padding: 1%;
   color: #424242; }
 
-h3 {
+span {
   padding: 1%;
-  color: #424242; }
+  color: #8f8f8f; }
 
 p {
   padding: 1%;
@@ -40,6 +40,25 @@ p {
 .letras-claras {
   color: #a6abb0;
   padding-bottom: 5%; }
+
+.letra-azul {
+  color: #4285f4;
+  text-align: right; }
+
+.tamano-image {
+  width: 90%; }
+
+.inicia-sesion {
+  background-color: #f1f3f4;
+  padding: 2vh;
+  margin: 3%; }
+  .inicia-sesion a {
+    color: #4285f4;
+    text-decoration: none; }
+  .inicia-sesion img {
+    margin-left: 52%;
+    margin-left: 86%;
+    margin-top: -9%; }
 
 .container {
   width: 100%;

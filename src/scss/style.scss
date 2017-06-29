@@ -5,7 +5,7 @@ $Azul: #4285f4;
 $padding-forever: 5vh;
 $puntero: pointer;
 $Titulo-padding: 1%;
-$subtitulo-padding: 1%;
+$subtitulo-padding: 2%;
 $parrafo-padding: 1%;
 
 body{
@@ -22,12 +22,13 @@ body{
 .logo{
 	text-align: center;
 	padding: $padding-forever;
+	 i{
+		 cursor: pointer;
+	 }
 
 }
 
-.puntero{
-	cursor: $puntero;
-}
+
 
 .menu{
 	list-style: none;
@@ -47,6 +48,7 @@ body{
 
 hr{
 	border-top: 5px solid $Azul;
+	margin: 0 3%;
 }
 
 h2{
@@ -54,9 +56,9 @@ h2{
 	color: $GrisOscuroTitulos;
 }
 
-h3{
-	padding: $subtitulo-padding;
-	color: $GrisOscuroTitulos;
+span{
+	padding: $Titulo-padding;
+	color: lighten($GrisOscuroTitulos, 30%);
 }
 
 p{
@@ -65,16 +67,33 @@ p{
 }
  .letras-claras{
 	 color: lighten($GrisTexto, 40%);
-	 padding-bottom: 5%;	
+	 padding-bottom: 5%;
  }
 
 
+.letra-azul{
+	color: $Azul;
+	text-align: right;
+}
 
+.tamano-image{
+	width: 90%;
+}
 
-
-
-
-
+.inicia-sesion{
+	background-color: #f1f3f4;
+	padding: 2vh;
+	margin: 3%;
+	a{
+		color: $Azul;
+		text-decoration: none;
+	}
+	img{
+		margin-left: 52%;
+		margin-left: 86%;
+    margin-top: -9%;
+	}
+}
 
 
 
