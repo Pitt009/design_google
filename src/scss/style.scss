@@ -4,7 +4,9 @@ $GrisTexto: #414549;
 $Azul: #4285f4;
 $padding-forever: 5vh;
 $puntero: pointer;
-$colorLinea: #4285f4;
+$Titulo-padding: 1%;
+$subtitulo-padding: 1%;
+$parrafo-padding: 1%;
 
 body{
 	font-family: 'Roboto';
@@ -13,7 +15,7 @@ body{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	
+
 
 }
 
@@ -29,7 +31,7 @@ body{
 
 .menu{
 	list-style: none;
-	
+
 	li{
 	 	display: inline-block;
 	 }
@@ -44,10 +46,27 @@ body{
 
 
 hr{
-	border-top: 5px solid $colorLinea;
+	border-top: 5px solid $Azul;
 }
 
+h2{
+	padding: $Titulo-padding;
+	color: $GrisOscuroTitulos;
+}
 
+h3{
+	padding: $subtitulo-padding;
+	color: $GrisOscuroTitulos;
+}
+
+p{
+	padding: $parrafo-padding;
+	color: $GrisClaro;
+}
+ .letras-claras{
+	 color: lighten($GrisTexto, 40%);
+	 padding-bottom: 5%;	
+ }
 
 
 
@@ -98,3 +117,8 @@ hr{
 
 }
 
+@for $numColumna from 1 through 12{
+	.col-#{$numColumna}{
+		width-left: anchoColumnas($numColumna);
+	}
+}
