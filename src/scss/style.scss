@@ -1,22 +1,8 @@
-$GrisOscuroTitulos: #424242;
-$GrisClaro: #5f6368;
-$GrisTexto: #414549;
-$Azul: #4285f4;
-$padding-forever: 5vh;
-$puntero: pointer;
-$Titulo-padding: 1%;
-$subtitulo-padding: 2%;
-$parrafo-padding: 1%;
+@import "_variables";
+@import "_grid";
 
 body{
 	font-family: 'Roboto';
-}
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-
-
 }
 
 .logo{
@@ -122,43 +108,11 @@ p{
 	width: 10%;
 }
 
-
-
-
-.container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
-.row{
-  &:before{
-    content:  "";
-    display: table;
-  }
-  &:after{
-    @extend .row:before;
-    clear: both;
-  }
-}
-[class*="col-"]{
-  min-height: 7px;
-  padding: 12px;
-  float: left;
-}
-@function anchoColumnas($columns) {
-  @return percentage(($columns/12));
-}
-
-@for $numColumna from 1 through 12{
-  .col-#{$numColumna}{
-    width: anchoColumnas($numColumna);
-  }
-
-}
-
-@for $numColumna from 1 through 12{
-	.col-#{$numColumna}{
-		width-left: anchoColumnas($numColumna);
+footer{
+	li{
+		list-style: none;
+	} a{
+		text-decoration: none;
+		color: $GrisTexto;
 	}
 }
